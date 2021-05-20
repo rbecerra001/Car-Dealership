@@ -45,4 +45,18 @@ export class MakeService {
     return this.http
       .get(`${herokuUrl}/api/makes/${makeId}`, requestOptions);
   }
+
+  createModel(make, newModel): any {
+    console.log('service: ', make, newModel);
+    const token = localStorage.getItem('token');
+    const requestOptions = {
+      headers: new HttpHeaders({
+        Authorization: `Bearer ${token}`
+      }),
+    };
+    return this.http
+      .post(`${herokuUrl}/api/makes/${make.id}/models`, newModel, requestOptions);
+  }
+
+
 }
