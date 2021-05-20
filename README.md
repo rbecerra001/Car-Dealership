@@ -1,7 +1,23 @@
 # Car-Dealership
 A site, that when logged in, users can `create`, `get`, `update` and `delete`. 
 
+
+### App Screenshot --- Pending 
+![]() 
+
+
+### Technologies used 
+* 
+
+
+### Installation instructions 
+1. 
+
+
 ### User Stories
+* Users are people interested in buying or celling cars. 
+  They would be able to post their own car as well as view others cars 
+
 1. As a user, I want to be able to log in.
 2. As a logged-in user, I want to be able to get all the makes of vehicles.
 3. As a logged-in user, I want to be able to get all the models of vehicles.
@@ -15,12 +31,14 @@ A site, that when logged in, users can `create`, `get`, `update` and `delete`.
 11. As a logged-in user, I want to be able to delete single vehicle model.
 12. As a logged-in user, I want to be able to logout to secure my information.
 
-### ER Diagram
+
+### Wireframe / ERD 
 version 2.0
 ![]()
 
 version 1.0
 ![](Car_Dealership_Diagram.png)
+
 
 #### Project Talking Points:
 * What would you do differently?
@@ -28,3 +46,6 @@ version 1.0
 * What would you do next?
 * How did you plan your project?
 * What did you learn?
+
+A couple of paragraphs about the general approach you took.
+Descriptions of any unsolved problems or major hurdles you had to overcome.
