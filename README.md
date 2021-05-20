@@ -7,11 +7,10 @@ A site, that when logged in, users can `create`, `get`, `update` and `delete`.
 
 
 ### Technologies used 
-* 
-
-
-### Installation instructions 
-1. 
+* Postman --- To check the backend of the app, CRUD or makes and models 
+* pgAdmin --- Checking the database to see the connection between app and database 
+* Heroku --- Deploying the backend of the app 
+* Angular --- Creating the frontend of the app 
 
 
 ### User Stories
