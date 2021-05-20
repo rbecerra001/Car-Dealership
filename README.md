@@ -15,3 +15,9 @@ A site, that when logged in, users can `create`, `get`, `update` and `delete`.
 11. As a logged-in user, I want to be able to delete single vehicle model.
 12. As a logged-in user, I want to be able to logout to secure my information.
 
+### ER Diagram
+version 2.0
+![]()
+
+version 1.0
+![](Car_Dealership_Diagram.png)
