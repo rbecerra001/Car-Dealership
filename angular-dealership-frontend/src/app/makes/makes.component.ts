@@ -1,4 +1,4 @@
-import { CategoryService } from 'src/app/services/make/make.service';
+import { MakeService } from 'src/app/services/make/make.service';
 import { Component, OnInit } from '@angular/core';
 declare const M;
 

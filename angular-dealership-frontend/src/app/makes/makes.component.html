@@ -15,4 +15,11 @@
       </form>
     </li>
   </ul>
+
+  <h4>Create New Make</h4>
+  <form (submit)="createMake()">
+    <input [(ngModel)]="makeName" name="makeName" type="text" placeholder="name" />
+    <input type="submit"/>
+  </form>
+
 </div>
