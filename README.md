@@ -39,12 +39,13 @@ version 1.0
 ![](Car_Dealership_Diagram.png)
 
 
+#### Unsolved Issues  
+1. 
+
+
 #### Project Talking Points:
 * What would you do differently?
 * What are you most proud of?
 * What would you do next?
 * How did you plan your project?
 * What did you learn?
-
-A couple of paragraphs about the general approach you took.
-Descriptions of any unsolved problems or major hurdles you had to overcome.
