@@ -1,1 +1,13 @@
-<p>make works!</p>
+<div *ngIf="make">
+  <h4>{{make.name}}</h4>
+  <form (submit)="createModel()">
+    <input [(ngModel)]="modelName" name="modelName" type="text" placeholder="new model" />
+    <input type="submit"/>
+  </form>
+  <ul>
+    <li *ngFor="let model of make.modelList">
+      {{model.name}}
+      <button (click)="deleteModel(make)">delete</button>
+    </li>
+  </ul>
+</div>

@@ -5,6 +5,7 @@ import { MakesComponent } from './makes/makes.component';
 import { ModelsComponent } from "./models/models.component";
 import { SignupComponent } from './signup/signup.component';
 import { LogoutComponent} from './logout/logout.component';
+import { MakeComponent } from './make/make.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'makes',
     component: MakesComponent
+  },
+  {
+    path: 'makes/:id',
+    component: MakeComponent
   },
   {
     path: 'models',
