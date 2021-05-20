@@ -1,3 +1,4 @@
+import { UserService } from 'src/app/services/user/user.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
-export class SignupComponent implements OnInit {
 
-  constructor() { }
+export class SignupComponent implements OnInit {
+  public userName: string;
+  public emailAddress: string;
+  public password: string;
+
+  registerUser(): void {
+    const newUser = {userName: this.userName, emailAddress: this.emailAddress, password: this.password};
+    this.userService.registerUser(newUser)
+      .subscribe(response => console.log(response),err => console.log(err));
+  }
+
+  constructor(private userService: UserService) {
+  }
 
   ngOnInit(): void {
   }
-
 }
