@@ -8,7 +8,8 @@ declare const M;
   styleUrls: ['./makes.component.css']
 })
 export class MakesComponent implements OnInit {
-  public makes: [];
+  public makes: any[];
+  public makeName: string;
 
   constructor(private makeService: MakeService) { }
 
@@ -25,5 +26,14 @@ export class MakesComponent implements OnInit {
       const toastHTML = '<span>You must login to see your makes</span>';
       M.toast({html: toastHTML});
     }
+  }
+
+  createMake(): any {
+    const newMake = {
+      name: this.makeName,
+    };
+    this.makeService.createMake(newMake).subscribe(response => {
+      this.makes = [...this.makes, response];
+    }, err => console.log(err));
   }
 }

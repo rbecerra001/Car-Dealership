@@ -12,7 +12,7 @@ export class MakeService {
 
   constructor(private http: HttpClient) { }
 
-  getCategories(): any {
+  getMakes(): any {
     const token = localStorage.getItem('token');
     const requestOptions = {
       headers: new HttpHeaders({
@@ -21,5 +21,17 @@ export class MakeService {
     };
     return this.http
       .get(`${herokuUrl}/api/makes`, requestOptions);
+  }
+
+  createMake(newMake): any {
+    console.log(newMake);
+    const token = localStorage.getItem('token');
+    const requestOptions = {
+      headers: new HttpHeaders({
+        Authorization: `Bearer ${token}`
+      }),
+    };
+    return this.http
+      .post(`${herokuUrl}/api/makes/`, newMake, requestOptions);
   }
 }
