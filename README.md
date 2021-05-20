@@ -21,3 +21,10 @@ version 2.0
 
 version 1.0
 ![](Car_Dealership_Diagram.png)
+
+#### Project Talking Points:
+* What would you do differently?
+* What are you most proud of?
+* What would you do next?
+* How did you plan your project?
+* What did you learn?
