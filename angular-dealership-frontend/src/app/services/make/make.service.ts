@@ -58,5 +58,25 @@ export class MakeService {
       .post(`${herokuUrl}/api/makes/${make.id}/models`, newModel, requestOptions);
   }
 
+  deleteMake(make): any {
+    const token = localStorage.getItem('token');
+    const requestOptions = {
+      headers: new HttpHeaders({
+        Authorization: `Bearer ${token}`
+      }),
+    };
+    return this.http
+      .delete(`${herokuUrl}/api/makes/${make.id}`, requestOptions);
+  }
 
+  deleteModel(make, modelId): any {
+    const token = localStorage.getItem('token');
+    const requestOptions = {
+      headers: new HttpHeaders({
+        Authorization: `Bearer ${token}`
+      }),
+    };
+    return this.http
+      .delete(`${herokuUrl}/api/makes/${make.id}/models/${modelId}`, requestOptions);
+  }
 }
