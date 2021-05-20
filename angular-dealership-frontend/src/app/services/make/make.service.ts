@@ -34,4 +34,15 @@ export class MakeService {
     return this.http
       .post(`${herokuUrl}/api/makes/`, newMake, requestOptions);
   }
+
+  getMake(makeId): any {
+    const token = localStorage.getItem('token');
+    const requestOptions = {
+      headers: new HttpHeaders({
+        Authorization: `Bearer ${token}`
+      }),
+    };
+    return this.http
+      .get(`${herokuUrl}/api/makes/${makeId}`, requestOptions);
+  }
 }
