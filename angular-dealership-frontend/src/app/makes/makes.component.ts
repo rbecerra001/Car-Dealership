@@ -7,6 +7,7 @@ declare const M;
   templateUrl: './makes.makes.html',
   styleUrls: ['./makes.component.css']
 })
+
 export class MakesComponent implements OnInit {
   public makes: any[];
   public makeName: string;
