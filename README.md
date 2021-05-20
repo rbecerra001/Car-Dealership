@@ -33,7 +33,7 @@ A site, that when logged in, users can `create`, `get`, `update` and `delete`.
 
 ### Wireframe / ERD 
 version 2.0
-![](carDealership2.png)
+![](carDealership2.PNG)
 
 version 1.0
 ![](Car_Dealership_Diagram.png)
