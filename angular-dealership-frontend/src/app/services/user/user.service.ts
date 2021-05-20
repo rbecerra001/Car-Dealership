@@ -15,4 +15,16 @@ export class UserService {
     return this.http
       .post(`${herokuUrl}/auth/users/register`, newUser)
   }
+
+  loginUser(user): void {
+    console.log(user);
+    this.http
+      .post(`${herokuUrl}/auth/users/login`, user)
+      .subscribe(response => {
+        const token = response['jwt'];
+        localStorage.setItem('currentUser', `${user.email}`);
+        localStorage.setItem('token', `${token}`);
+        console.log(response, token);
+      }, err => console.log(err));
+  }
 }
