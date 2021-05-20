@@ -4,12 +4,12 @@
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a routerLink="/categories">All Makes</a></li>
 
-      <span *ngIf="">
+      <span *ngIf="!this.currentUser">
         <li><a routerLink="/signup">Sign Up</a></li>
-        <li><a routerLink="/login">Log In</a></li>
+        <li><a routerLink="/login">Login</a></li>
       </span>
-      <span *ngIf="">
-        <li><a routerLink="/logout">Log Out</a></li>
+      <span *ngIf="this.currentUser">
+        <li><a routerLink="/logout">Log out</a></li>
         <li>Hello, {{this.currentUser}}</li>
       </span>
     </ul>
