@@ -4,11 +4,16 @@ import { LoginComponent } from './login/login.component';
 import { MakesComponent } from './makes/makes.component';
 import { ModelsComponent } from "./models/models.component";
 import { SignupComponent } from './signup/signup.component';
+import { LogoutComponent} from './logout/logout.component';
 
 const routes: Routes = [
   {
     path: 'signup',
     component: SignupComponent
+  },
+  {
+    path: 'logout',
+    component: LogoutComponent
   },
   {
     path: 'makes',
