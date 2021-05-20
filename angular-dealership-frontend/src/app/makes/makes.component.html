@@ -7,19 +7,22 @@
   <h4>All Makes</h4>
   <ul>
     <li *ngFor="let make of makes">
-      {{make.name}} -- {{make.description}}
+      {{make.name}}
       <button (click)="deleteMake(make)">delete</button>
+
+      <ul>
+        <li *ngFor="let model of make.modelList">
+          {{model.name}}
+      </ul>
       <form (submit)="createModel(make)">
-        <input [(ngModel)]="modelName" name="modelName" type="text" placeholder="new model"/>
+        <input [(ngModel)]="modelName" name="modelName" type="text" placeholder="new model" />
         <input type="submit"/>
       </form>
     </li>
   </ul>
-
   <h4>Create New Make</h4>
   <form (submit)="createMake()">
     <input [(ngModel)]="makeName" name="makeName" type="text" placeholder="name" />
     <input type="submit"/>
   </form>
-
 </div>
