@@ -1,9 +1,13 @@
 # Car-Dealership
-A site, that when logged in, users can `create`, `get`, `update` and `delete`. 
+A site, that when logged in, users can `create`, `get`, `update` and `delete` makes and models of vehicles. A place to buy or sell cars for asking price.
 
 
-### App Screenshot --- Pending 
-![]() 
+### App Screenshot 
+![](CDhome.png)
+![](CDlogin.png)
+![](CDmakes.png)
+![](CDmodels.png)
+![](CDsignup.png)
 
 
 ### Technologies used 
@@ -39,17 +43,11 @@ version 1.0
 ![](Car_Dealership_Diagram.png)
 
 
-#### Unsolved Issues  
-1. 
-
-
-#### Project Talking Points:
-* What would you do differently?
-* What are you most proud of?
-* What would you do next?
-* How did you plan your project?
-* What did you learn?
-
-Future iteas: 
-Add `Year`, `New or Used` (boolean), `Body type` and `Features` to models 
-
+#### Next steps 
+1. Add `Year`, `New or Used`, `Body type` and `Features` to models
+2. Ability to add models with make names instead of id
+3. More filter possibilities (price, years, miles, body type, etc.)
+4. Logging in sales person vs users 
+5. Add photos to makes (brand logos) and models
+6. Display top 10 models on homepage 
+7. Add some hyperlinks to footer
