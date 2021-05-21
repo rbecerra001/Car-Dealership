@@ -23,6 +23,17 @@ export class MakeService {
       .get(`${herokuUrl}/api/makes`, requestOptions);
   }
 
+  getModels(): any {
+    const token = localStorage.getItem('token');
+    const requestOptions = {
+      headers: new HttpHeaders({
+        Authorization: `Bearer ${token}`
+      }),
+    };
+    return this.http
+      .get(`${herokuUrl}/api/models/`, requestOptions);
+  }
+
   createMake(newMake): any {
     console.log(newMake);
     const token = localStorage.getItem('token');

@@ -1,1 +1,32 @@
-<p>models works!</p>
+<section>
+  <!--  <h2>Get All Makes for {{this.emailAddress}}</h2>-->
+  <button (click)="getModels()">Get All Models</button>
+</section>
+
+<div *ngIf="models">
+  <h4>All Models</h4>
+  <ul>
+    <li *ngFor="let model of models">
+      {{model.name}}
+<!--      <button (click)="deleteModel(model)">delete</button>-->
+
+      <ul>
+        <li *ngFor="let model of make.modelList">
+          {{model.name}}
+      </ul>
+      <form (submit)="createModel(make)">
+        <input [(ngModel)]="modelName" name="modelName" type="text" placeholder="new model" />
+        <input type="submit"/>
+      </form>
+    </li>
+  </ul>
+  <h4>Create New Model</h4>
+  <form (submit)="createModel()">
+    <input [(ngModel)]="modelName" name="modelName" type="text" placeholder="name" />
+    <input type="submit"/>
+  </form>
+</div>
+
+<body>
+<img src="https://www.titlemax.com/media/most-common-car-models-ranked-by-insurance-losses-6_75per.png">
+</body>

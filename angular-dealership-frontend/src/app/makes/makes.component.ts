@@ -38,12 +38,4 @@ export class MakesComponent implements OnInit {
       this.makes = [...this.makes, response];
     }, err => console.log(err));
   }
-
-  createModel(make): any {
-    console.log('component: ', make, this.modelName);
-    const newModel = {name: this.modelName};
-    this.makeService.createModel(make, newModel).subscribe(response => {
-      console.log(response);
-    });
-  }
 }

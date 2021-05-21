@@ -52,3 +52,4 @@ version 1.0
 
 Future iteas: 
 Add `Year`, `New or Used` (boolean), `Body type` and `Features` to models 
+
