@@ -7,18 +7,23 @@
   <h4>All Models</h4>
   <ul>
     <li *ngFor="let model of models">
-      {{model.name}}
+      <p>{{model.name}}</p>
+      Miles: {{model.miles}}
+      <br>Price: ${{model.price}}
+      <br>
 <!--      <button (click)="deleteModel(model)">delete</button>-->
 
-      <ul *ngFor="let make of makes">
-        <li *ngFor="let model of make.modelList">
-          {{model.name}}
-      </ul>
+<!--      <ul *ngFor="let make of makes">-->
+<!--        <li *ngFor="let model of make.modelList">-->
+<!--          {{model.name}}-->
+<!--      </ul>-->
     </li>
   </ul>
   <h4>Create New Model</h4>
   <form (submit)="createModel()">
-    <input [(ngModel)]="modelName" name="modelName" type="text" placeholder="name" />
+    <input [(ngModel)]="modelName" name="modelName" type="text" placeholder="Name" />
+    <input [(ngModel)]="miles" name="modelMiles" type="text" placeholder="Miles" />
+    <input [(ngModel)]="price" name="modelPrice" type="text" placeholder="Price" />
     <input type="submit"/>
   </form>
 </div>
