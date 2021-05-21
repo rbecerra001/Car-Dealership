@@ -10,6 +10,45 @@ nav {
   background-color: blue;
 }
 
-div {
+body {
+  background-color: #03254c;
+}
 
+footer{
+  font-family: Arial;
+  background-color: royalblue;
+}
+
+.box {
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.one {
+  flex: 1 1 auto;
+  padding: 50px 50px 50px 50px;
+}
+
+.two {
+  flex: 1 1 auto;
+  padding: 50px 50px 50px 50px;
+}
+
+.three {
+  flex: 1 1 auto;
+  padding: 50px 50px 50px 50px;
+}
+
+p, .submitbutton, .searchbox {
+  font-size: medium;
+}
+
+.something{
+  width: 100%;
+  text-align:center;
+  padding: 50px 50px 50px 50px;
+  border: black;
 }

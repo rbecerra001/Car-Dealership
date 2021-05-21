@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 
-const herokuUrl = 'https://damp-bayou-38809.herokuapp.com';
+const herokuUrl = 'http://localhost:9092';
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +33,7 @@ export class UserService {
         console.log(response, token);
         this.currentUser = user.email;
         this.searchSubject.next(this.currentUser);
-        this.router.navigate(['/categories']);
+        this.router.navigate(['/makes']);
       }, err => console.log(err));
   }
 

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 
-const herokuUrl = 'https://damp-bayou-38809.herokuapp.com';
+const herokuUrl = 'http://localhost:9092';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class MakeService {
       }),
     };
     return this.http
-      .get(`${herokuUrl}/api/makes`, requestOptions);
+      .get(`${herokuUrl}/makes`, requestOptions);
   }
 
   getModels(): any {
@@ -31,7 +31,7 @@ export class MakeService {
       }),
     };
     return this.http
-      .get(`${herokuUrl}/api/models/`, requestOptions);
+      .get(`${herokuUrl}/models/`, requestOptions);
   }
 
   createMake(newMake): any {
@@ -43,7 +43,7 @@ export class MakeService {
       }),
     };
     return this.http
-      .post(`${herokuUrl}/api/makes/`, newMake, requestOptions);
+      .post(`${herokuUrl}/makes/`, newMake, requestOptions);
   }
 
   getMake(makeId): any {
@@ -54,7 +54,7 @@ export class MakeService {
       }),
     };
     return this.http
-      .get(`${herokuUrl}/api/makes/${makeId}`, requestOptions);
+      .get(`${herokuUrl}/makes/${makeId}`, requestOptions);
   }
 
   getModel(modelId): any {
@@ -65,7 +65,7 @@ export class MakeService {
       }),
     };
     return this.http
-      .get(`${herokuUrl}/api/models/${modelId}`, requestOptions);
+      .get(`${herokuUrl}/models/${modelId}`, requestOptions);
   }
 
   createModel(make, newModel): any {
@@ -77,7 +77,7 @@ export class MakeService {
       }),
     };
     return this.http
-      .post(`${herokuUrl}/api/makes/${make.id}/models`, newModel, requestOptions);
+      .post(`${herokuUrl}/makes/${make.id}/models`, newModel, requestOptions);
   }
 
   deleteMake(make): any {
@@ -88,7 +88,7 @@ export class MakeService {
       }),
     };
     return this.http
-      .delete(`${herokuUrl}/api/makes/${make.id}`, requestOptions);
+      .delete(`${herokuUrl}/makes/${make.id}`, requestOptions);
   }
 
   deleteModel(make, modelId): any {
@@ -99,6 +99,6 @@ export class MakeService {
       }),
     };
     return this.http
-      .delete(`${herokuUrl}/api/makes/${make.id}/models/${modelId}`, requestOptions);
+      .delete(`${herokuUrl}/makes/${make.id}/models/${modelId}`, requestOptions);
   }
 }
