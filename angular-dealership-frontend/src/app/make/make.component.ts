@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MakeComponent implements OnInit {
   makeId: string;
+  modelId: string;
   make: any;
   modelName = '';
 

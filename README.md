@@ -49,3 +49,6 @@ version 1.0
 * What would you do next?
 * How did you plan your project?
 * What did you learn?
+
+Future iteas: 
+Add `Year`, `New or Used` (boolean), `Body type` and `Features` to models 

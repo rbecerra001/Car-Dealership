@@ -63,7 +63,7 @@ public class MakeController {
     }
 
     // http://localhost:{PORTNUMBER}/makes/{makeId}
-    @DeleteMapping(path = "/artists/{artistId}")
+    @DeleteMapping(path = "/makes/{makeId}")
     public ResponseEntity<HashMap> deleteMake(@PathVariable Long makeId){
         System.out.println("Calling deleteMake ==>");
         makeService.deleteMake(makeId);
